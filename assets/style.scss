@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:400,700');
+
+// Color Identity
+$color-primary:         #00B0B9;
+$color-primary-light:   #64CCC9;
+$color-secondary:       #F7CED7;
+$color-tertiary:        #A0C1E5;
+$color-gray:            #A0AAB2;
+$color-gray-dark:       #4A5454;
+$color-white:           #FFFFFF;
+$color-black:           #333333;
+
+body {
+    color: $color-black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    nav {
+        background: $color-white;
+        box-shadow: 0 2px 3px rgba($color: $color-gray-dark, $alpha: 0.6);
+
+        .navbar-brand {
+            img {
+                max-height: 50px;
+            }
+        }
+
+        .nav-item {
+            padding: 0 15px;
+            &:hover {
+                background-color: $color-secondary;
+                border-radius: 5px;
+            }
+            .nav-link {
+                text-align: center;
+                h6 {
+                    margin-bottom: 0;
+                    color: $color-primary;
+                }
+                span {
+                    font-size: 14px;
+                    color: $color-gray-dark;
+                }
+            }
+        }
+    }
+}
+footer {
+    height: 80px;
+    background-color: $color-gray-dark;
+}
+
+// Sections
+section {
+    padding: 60px 0;
+}
+#home {
+    background: linear-gradient(125deg, $color-primary-light 20%, $color-tertiary, $color-secondary 80%);
+    .home-logo {
+        max-width: 320px;
+    }
+    .home-dialog {
+        background: $color-white;
+        border-radius: 20px;
+        padding: 30px;
+    }
+}
+#slogan {
+    .slogan-divider {
+        border-top: 5px solid $color-secondary;
+        max-width: 30%;
+    }
+}
+#service {
+    padding: 0 20px 60px;
+    .service-box {
+        background: $color-white;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 2px 6px rgba($color: $color-gray-dark, $alpha: 0.4);
+
+        .service-item {
+            background-color: $color-secondary;
+            height: 100%;
+            padding: 20px 10px;
+            text-align: center;
+            color: $color-white;
+        }
+    }
+}
+#dentist {
+    background: linear-gradient(to bottom, $color-primary-light 20%, $color-white 80%);
+    .dentist-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            position: relative;
+            z-index: 99;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid $color-primary;
+        }
+        .info {
+            position: relative;
+            z-index: 11;
+            width: 100%;
+            margin-top: -60px;
+            padding: 80px 20px 20px;
+            text-align: center;
+            background-color: $color-white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba($color: $color-gray-dark, $alpha: 0.4);
+
+            h6 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+#location {
+    background-color: $color-primary-light;
+    .location-row {
+        .col-lg-5 {
+            position: relative;
+            z-index: 99;
+            iframe {
+                box-shadow: 0 2px 6px rgba($color: $color-gray-dark, $alpha: 0.4);
+            }
+            @media screen and (max-width: 991px) {
+                margin-bottom: -20px;
+            }
+        }
+        .col-lg-7 {
+            position: relative;
+            z-index: 88;
+        }
+        .location-info {
+            background-color: $color-white;
+            border-radius: 5px;
+            padding: 30px;
+            @media screen and (min-width: 992px) {
+                padding-left: 60px;
+                margin-left: -30px;
+            }
+            div {
+                border-left: 5px solid $color-secondary;
+                padding-left: 20px;
+            }
+        }
+    }
+}
+#contact {
+    ::placeholder {
+        color: $color-primary-light;
+    }
+}
+
+// Typo
+.text-primary { color: $color-primary !important; }
+.text-lighter { color: $color-gray !important; }
+
+// Button
+.btn-primary {
+    background-color: $color-primary !important;
+    border-color: $color-primary-light !important;
+}

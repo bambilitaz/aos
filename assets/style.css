@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:400,700");
+body {
+  color: #333333;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400; }
+
+header nav {
+  background: #FFFFFF;
+  box-shadow: 0 2px 3px rgba(74, 84, 84, 0.6); }
+  header nav .navbar-brand img {
+    max-height: 50px; }
+  header nav .nav-item {
+    padding: 0 15px; }
+    header nav .nav-item:hover {
+      background-color: #F7CED7;
+      border-radius: 5px; }
+    header nav .nav-item .nav-link {
+      text-align: center; }
+      header nav .nav-item .nav-link h6 {
+        margin-bottom: 0;
+        color: #00B0B9; }
+      header nav .nav-item .nav-link span {
+        font-size: 14px;
+        color: #4A5454; }
+
+footer {
+  height: 80px;
+  background-color: #4A5454; }
+
+section {
+  padding: 60px 0; }
+
+#home {
+  background: linear-gradient(125deg, #64CCC9 20%, #A0C1E5, #F7CED7 80%); }
+  #home .home-logo {
+    max-width: 320px; }
+  #home .home-dialog {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px; }
+
+#slogan .slogan-divider {
+  border-top: 5px solid #F7CED7;
+  max-width: 30%; }
+
+#service {
+  padding: 0 20px 60px; }
+  #service .service-box {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 6px rgba(74, 84, 84, 0.4); }
+    #service .service-box .service-item {
+      background-color: #F7CED7;
+      height: 100%;
+      padding: 20px 10px;
+      text-align: center;
+      color: #FFFFFF; }
+
+#dentist {
+  background: linear-gradient(to bottom, #64CCC9 20%, #FFFFFF 80%); }
+  #dentist .dentist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #dentist .dentist-card img {
+      position: relative;
+      z-index: 99;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid #00B0B9; }
+    #dentist .dentist-card .info {
+      position: relative;
+      z-index: 11;
+      width: 100%;
+      margin-top: -60px;
+      padding: 80px 20px 20px;
+      text-align: center;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(74, 84, 84, 0.4); }
+      #dentist .dentist-card .info h6 {
+        margin-bottom: 0; }
+
+#location {
+  background-color: #64CCC9; }
+  #location .location-row .col-lg-5 {
+    position: relative;
+    z-index: 99; }
+    #location .location-row .col-lg-5 iframe {
+      box-shadow: 0 2px 6px rgba(74, 84, 84, 0.4); }
+    @media screen and (max-width: 991px) {
+      #location .location-row .col-lg-5 {
+        margin-bottom: -20px; } }
+  #location .location-row .col-lg-7 {
+    position: relative;
+    z-index: 88; }
+  #location .location-row .location-info {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 30px; }
+    @media screen and (min-width: 992px) {
+      #location .location-row .location-info {
+        padding-left: 60px;
+        margin-left: -30px; } }
+    #location .location-row .location-info div {
+      border-left: 5px solid #F7CED7;
+      padding-left: 20px; }
+
+#contact ::placeholder {
+  color: #64CCC9; }
+
+.text-primary {
+  color: #00B0B9 !important; }
+
+.text-lighter {
+  color: #A0AAB2 !important; }
+
+.btn-primary {
+  background-color: #00B0B9 !important;
+  border-color: #64CCC9 !important; }
+
+/*# sourceMappingURL=style.css.map */
