@@ -67,9 +67,19 @@
     </header>
     <section id="home">
         <div class="container">
+            <div class="mb-5 text-center">
+                <img src="./assets/images/logo-main.png" class="img-fluid home-logo" alt="home-logo">        
+            </div>
             <div class="row">
-                <div class="col-12 col-md-5 text-center mb-5 my-md-auto">
-                    <img src="./assets/images/logo-main.png" class="img-fluid home-logo" alt="home-logo">
+                <div class="col-12 col-md-5 text-center mb-3 my-md-auto">
+                    <div class="promo-slider">
+                        <div>
+                            <img src="./assets/images/promo1.jpg" class="img-fluid">
+                        </div>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Faossmartclinic%2Fvideos%2F462519647591236%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-7">
                     <div class="home-dialog">
@@ -80,11 +90,20 @@
                             ผสมผสานความเชี่ยวชาญเฉพาะด้านทางทันตกรรม และเทคโนโลยีเพื่อสร้างสรรค์มาตรฐานใหม่
                             ของการให้บริการทางทันตกรรม
                         </p>
+                        <p class="text-lighter">
+                            Providing advanced orthodontic treatment 
+                            by AOSC Orthodontics technology with quick, 
+                            convenient online customer care system. 
+                            Coordinate dental expertise with technology 
+                            to create new standards of dental services.
+                        </p>
                         <p class="text-lighter mb-0">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Veniam ratione, reprehenderit eaque minus ab veritatis aspernatur, 
-                            et perferendis fugiat enim officiis quasi architecto quisquam inventore! 
-                            Eum blanditiis unde adipisci dolor
+                            以AOSC正畸治療技術提供高級牙齒矯正服務，搭配方便快捷的客戶線上服務系統，
+                            結合牙醫專業知識與科技創立牙科服務新標準。
+                            <br><br>
+                            AOSC歯列矯正技術で高度な歯科矯正治療と、
+                            便利で迅速なオンラインカスタマーサービスを提供し、
+                            専門知識と技術を相乗し歯科医療の新しい基準を創造します。
                         </p>
                     </div>
                 </div>
@@ -146,7 +165,7 @@
             </div>
             <div class="py-2 d-flex justify-content-between border-bottom">
                 <div>
-                    <p class="mb-0">อุดฟันสอมัลกัม (สีเงิน)</p>
+                    <p class="mb-0">อุดฟันสีอมัลกัม (สีเงิน)</p>
                     <span class="text-secondary">Amalgam filling</span>
                 </div>
                 <div class="text-right">
@@ -331,7 +350,7 @@
                         <h5 class="text-lighter">(Bangsue Branch)</h5>
                         <br>
                         <div>
-                            Coming soon...<br><br><br><br>
+                            COMING SOON...<br><br><br><br>
                         </div>
                     </div>
                 </div>
@@ -344,7 +363,43 @@
             <h5 class="text-primary">ติดต่อเรา</h5>
         </div>
         <div class="container">
-            <form>
+            <div class="row px-5">
+                <div class="col-12 col-md-4 text-center mb-4">
+                    <span class="d-inline-block border border-default">
+                        <img src="./assets/images/qr-line.png" class="img-fluid">
+                    </span>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/icon-line.svg" width="40px" class="mr-4">
+                        <h5 class="mb-0">@aossmartclinic</h5>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/icon-ig.svg" width="40px" class="mr-4">
+                        <h5 class="mb-0">
+                            <a href="https://www.instagram.com/aossmartclinic/" target="_blank">
+                                AOSSMARTCLINIC
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/icon-fb.svg" width="40px" class="mr-4">
+                        <h5 class="mb-0">
+                            <a href="https://www.facebook.com/aossmartclinic/" target="_blank">
+                                AOSSMARTCLINIC
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/icon-contact.svg" width="40px" class="mr-4">
+                        <h5 class="mb-0">
+                            065-716-1518, 065-716-1519
+                        </h5>
+                    </div>
+                    <a href="https://m.me/aossmartclinic" target="_blank" class="btn btn-lg btn-primary px-5">SEND MESSAGE INBOX</a>
+                </div>
+            </div>
+            <!-- <form>
                 <div class="form-group">
                     <label for="form-full-name">ชื่อ - สกุล</label>
                     <input type="text" class="form-control" id="form-full-name" placeholder="FULL NAME">
@@ -358,7 +413,7 @@
                     <textarea class="form-control" id="form-message" placeholder="MESSAGE" rows="5"></textarea>
                 </div>
                 <button type="submit" class="btn btn-block btn-lg btn-primary">SEND MESSAGE</button>
-            </form>
+            </form> -->
         </div>
     </section>
     
@@ -385,6 +440,12 @@
     
     <script>
     $(document).ready(function(){
+        $('.promo-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 4000,
+            adaptiveHeight: true
+        });
+
         $('.gallery-slider').slick({
             dots: true,
             infinite: true,
